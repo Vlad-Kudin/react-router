@@ -6,6 +6,7 @@ const Header = () => {
     <header className={styles.header}>
       <ul>
         <li><NavLink activeClassName={styles.active} to="/home">Home</NavLink></li>
+        <li><NavLink activeClassName={styles.active} to="/articles">Articles</NavLink></li>
         <li><NavLink activeClassName={styles.active} to="/about">About</NavLink></li>
       </ul>
     </header>
