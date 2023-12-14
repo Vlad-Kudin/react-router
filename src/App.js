@@ -5,6 +5,7 @@ import Header from './components/Header';
 import ContactUs from './pages/ContactUs';
 import Articles from './pages/Articles';
 import ArticleDetails from './pages/ArticleDetails';
+import { Redirect } from 'react-router-dom';
 
 function App() {
   return <div>
@@ -13,6 +14,9 @@ function App() {
     </header>
     <main>
       <Switch>
+        <Route path='/'>
+          <Redirect to='/home' />
+        </Route>
         <Route path='/home'>
           <Home />
         </Route>
